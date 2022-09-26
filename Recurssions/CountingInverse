@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std ;
+
+// recurssive function 
+ void print(int n){
+      if(n==0){
+          return ;
+      }
+   
+      print(n-1);
+       cout<<n<<endl;
+ }
+ 
+
+
+
+int main()
+{    
+    int n;
+    cout<<"Enter the value of n "<<endl;
+    cin>>n;
+    
+    print(n);
+   
+    return 0;
+}
+
